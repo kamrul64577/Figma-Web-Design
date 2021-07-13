@@ -1,0 +1,134 @@
+/* Import Font  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Common Css  */
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 39px;
+    line-height: 49px;
+}
+h2{
+    font-size: 36px;
+    line-height: 45px;
+}
+h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+h4{
+    font-size: 18px;
+    line-height: 22px;
+}
+p{
+
+    margin: 29px 0;
+}
+.btn{
+    font-size: 18px;
+    font-weight: bold;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+:root{
+    --orange-color:#F78065;
+    --white-color: #ffffff;
+}
+
+
+/* Header  */
+.header{
+    position: relative;
+}
+.header-image img{
+    width: 100%;
+}
+.header-box{
+    width: 500px;
+    height: 320px;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: absolute;
+    left: 63px;
+    top: 384px;
+    z-index: 10;
+    padding: 80px 160px 80px 64px;
+}
+.orange-color{
+    color: var(--orange-color);
+}
+.header-box-info{
+    font-size: 20px;
+} 
+.btn{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    padding: 12px 50px 12px 50px;
+    border: none;
+}
+.fas{
+    padding-right: 10px;
+}
+
+
+/* Blog Section  */
+.blog-section{
+    margin-top: 350px;
+}
+
+.blogs{
+    display: flex;
+}
+.blog{
+    padding: 10px 20px;
+}
+.blog img{
+    width: 60%;
+    height: 30%;
+}
+.blog-title{
+    margin-top: 40px;
+}
+.blog-info{
+    color: rgba(0, 0, 0, 0.5);
+}
+.blog-link{
+    color: var(--orange-color);
+}
+
+
+
+/* Media Query For Mobile  */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+  
+    .header-box{
+        width: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        padding: 30px;
+    }
+    .blog-section{
+        margin-top:0;
+    }
+    .blogs{
+        flex-direction: column;
+        width: 90%;
+    }
+    .blog img{
+        width: 80%;
+        margin-top: 30px;
+    }
+   
+}

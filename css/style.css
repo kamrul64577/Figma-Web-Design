@@ -139,7 +139,7 @@ footer{
     background-color: indigo;
     color: white;
     text-align: center;
-    padding: 5px 1px;
+    padding: 5px 0px;
 }
 
 /* Media Query For Mobile  */
@@ -166,6 +166,9 @@ footer{
     .blog img{
         width: 80%;
         margin-top: 30px;
+    }
+    .blog, .content{
+        padding: 10px 3%;
     }
    
 }

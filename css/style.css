@@ -72,6 +72,7 @@ p{
     color: var(--white-color);
     padding: 12px 50px 12px 50px;
     border: none;
+    border-radius: 10px;
 }
 .fas{
     padding-right: 10px;
@@ -83,10 +84,10 @@ p{
     margin-top: 350px;
 }
 
-.blogs{
+.blogs, .join-content{
     display: flex;
 }
-.blog{
+.blog, .content{
     padding: 10px 20px;
 }
 .blog img{
@@ -103,7 +104,43 @@ p{
     color: var(--orange-color);
 }
 
+/* Facility Blog Section  */
+.facility-blog-section, .join-section{
+    margin-top: 70px;
+}
+.facility-blog-section h1{
+    margin-bottom: 50px;
+    padding: 2%;
+}
+.facility-blog-section .fas, .facility-blog-section .far, .facility-blog-section .fab{
+    font-size: 35px;
+    color: gray;
+}
+.facility-blog-section .blog-link{
+    margin-bottom: 40px;
+}
 
+/* Join Section  */
+.join-section .content{
+    width: 20%;
+}
+.join-section .first.content{
+    width: 100%;
+}
+.join-section p{
+    margin: 10px 0;
+}
+.join-section h5{
+    color: var(--orange-color);
+}
+
+/* Footer  */
+footer{
+    background-color: indigo;
+    color: white;
+    text-align: center;
+    padding: 5px 1px;
+}
 
 /* Media Query For Mobile  */
 @media only screen and (max-width:688px) {
@@ -122,7 +159,7 @@ p{
     .blog-section{
         margin-top:0;
     }
-    .blogs{
+    .blogs, .join-content{
         flex-direction: column;
         width: 90%;
     }
